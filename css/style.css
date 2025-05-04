@@ -1,0 +1,159 @@
+:root {
+    --color1: #D83C3C;
+    --boton2: #4E7D58;
+    --fondos1: #F5E6CC;
+    --boton: #7B2D26;
+    --interaccion: #484B52;
+    --interaccion2: #F4CE51;
+    --fondos_boton: #FAF8F0;
+    --fondos2: #2D2D2D;
+
+    --fuentePrincipal: 'Staatliches', cursive;
+
+}
+
+body {
+    background-color: var(--fondos1);
+    color: var(--fondos2);
+}
+
+.Cabecera {
+    background-color: var(--color1);
+}
+
+button {
+
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #d0c4b0;
+}
+
+button:hover {
+    background-color:rgba(0, 128, 0, 0.457);
+}
+
+
+.tarjetas-restaurantes {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+    gap: 5rem 0;
+}
+
+.tarjeta {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px var(--boton2);
+}
+
+.tarjeta {
+    background-color: var(--fondos_boton);
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px var(--interaccion);
+    overflow: hidden;
+    text-align: center;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.footer{
+    background-color: var(--interaccion);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+.footer_texto{
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    font-size: 2.2rem;
+}
+.formulario{
+    justify-content: center;
+    align-content: center;
+}
+.mb-3{
+    align-content: center;
+    justify-content: center;
+    width: 600px;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cinzel:wght@400;700&family=Oswald:wght@400;700&family=Lora:wght@400;700&family=Roboto:wght@400;700&family=Merriweather:wght@400;700&family=Pacifico&family=Raleway:wght@400;700&family=Great+Vibes&display=swap');
+h1,h2,h3 {
+    color: var(--color1);
+    font-family: var(--fuentePrincipal);
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+
+}
+
+p {
+    color: var(--gris-pizarra);
+
+}
+
+a {
+    color: var(--amarillo-limon);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--boton);
+}
+
+/*Logotipo*/
+
+.header_logo{
+    width: 120px;
+    height: auto;
+    margin: auto;
+}
+
+.navegacion_logo{
+    flex: 1;
+}
+
+/*Modificar margen de la cabecera*/
+#Cabecera{
+    margin: 0rem 0rem  5rem ;
+}
+
+/*Modificar Formulario*/
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #918a7e;
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.campo{
+    width: 100%;
+}
+input[type= "text"], input[type="file"]{
+    width: 100%;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
