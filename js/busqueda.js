@@ -40,7 +40,6 @@
     const todosLosRestaurantes = [...restaurantesBase, ...restaurantesLocalStorage];
   
     function renderizarResultados(lista) {
-        console.log(lista);
         resultados.innerHTML = "";
   
       if (lista.length === 0) {
